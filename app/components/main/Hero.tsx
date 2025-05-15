@@ -27,13 +27,13 @@ const Hero = () => {
     autoplay: true,
   };
   return (
-    <section className="relative bg-[url('/digital.jpg')] bg-cover  bg-center bg-no-repeat min-h-screen  justify-center lg:items-center">
+    <section className="relative h-[calc(100vh-80px)] bg-[url('/digital.jpg')] bg-cover  bg-center bg-no-repeat w-full flex items-center justify-center">
 
       {/* <!-- Overlay --> */}
       <div className="absolute inset-0 bg-black/80"></div>
 
       {/* <!-- Content --> */}
-      <div className="relative z-10 text-center text-white px-6 max-w-3xl">
+      <div className="relative  z-10 text-center text-white px-6 max-w-3xl">
         {/* <h1 className="text-4xl sm:text-5xl font-bold mb-4 leading-snug">
           Achieve Your Business Goals with Tailored Digital Solutions That Work.
         </h1>
@@ -42,7 +42,7 @@ const Hero = () => {
         </p>
         <Link href='/services' className={`${inria_sans.className} antialiased px-10 py-2 outline-none border-white border-2 hover:text-[#C9A50A] text-white text-[20px]`}>Check our Services</Link> */}
 
-        <h1 className="text-4xl sm:text-5xl font-bold pt-20 mb-4 leading-snug">
+        <h1 className="text-4xl sm:text-5xl font-bold mb-4 leading-snug">
           A Digital Production Studio that will work
         </h1>
         <div className='bg-[#262626] p-4 rounded place-items-center text-center mb-4'>

@@ -1,11 +1,26 @@
 import React from 'react'
-
+import Card from '../Card';
+import { FaBrush } from 'react-icons/fa';
+import SectionHeader from '../SectionHeader';
+import futuristicLines from "@/public/futuristic-lines.jpg"
 const Explore = () => {
   return (
-    <div className='bg-[#ddd] py-20 px-40'>
-        <h1 className="text-center pb-5 text-[40px]">Explore life at Net-Trix solutions</h1>
-        <p className="text-left text-[18px] ">Infosys is a global leader in next-generation digital services and consulting. Over 300,000 of our people work to amplify human potential and create the next opportunity for people, businesses and communities. We enable clients in more than 56 countries to navigate their digital transformation. With over four decades of experience in managing the systems and workings of global enterprises, we expertly steer clients, as they navigate their digital transformation powered by cloud and AI. We enable them with an AI-first core, empower the business with agile digital at scale and drive continuous improvement with always-on learning through the transfer of digital skills, expertise, and ideas from our innovation ecosystem. We are deeply committed to being a well-governed, environmentally sustainable organization where diverse talent thrives in an inclusive workplace. Visit www.infosys.com to see how Infosys (NSE, BSE, NYSE: INFY) can help your enterprise navigate your next.</p>
-    </div>
+    <section>
+      {/* section header */}
+
+      <SectionHeader header='Explore Life at Net-trix Solution' text='Transform your brand with innovative digital solution that captivate and engage your audience' background="/futuristic-lines.jpg" />
+      <div className="mx-auto grid grid-cols-[repeat(auto-fit,minmax(250px,1fr))]">
+
+        <Card header="Global Digital Services" Icon={FaBrush} text={` Infosys is a global leader in next-generation digital services and consulting. With a workforce of over 300,000 people worldwide, we strive to amplify human potential and create the next opportunity for individuals, businesses, and communities alike. Our reach spans more than 56 countries, enabling clients across the globe to successfully navigate their digital transformation journeys with confidence and innovation.`} />
+
+        <Card header="Cloud & AI Transformation" Icon={FaBrush} text={`With over four decades of expertise in managing the complex systems and operations of global enterprises, Infosys expertly guides clients through their digital transformations powered by cutting-edge cloud technologies and artificial intelligence. We enable organizations to build an AI-first core, empower businesses to operate with agile digital solutions at scale, and foster continuous improvement by leveraging data-driven insights and innovative tools.`} />
+
+
+        <Card header="Innovation & Learning" Icon={FaBrush} text={`At the heart of Infosys’ success lies a commitment to continuous learning and innovation. We cultivate an always-on learning environment by transferring digital skills, expertise, and breakthrough ideas through a vibrant innovation ecosystem. This dedication ensures our clients remain competitive and ready to embrace emerging technologies, maintaining agility and growth in a rapidly evolving digital landscape.`} />
+
+        <Card header="Sustainability & Inclusion" Icon={FaBrush} text={`Infosys is deeply committed to being a well-governed, environmentally sustainable organization that nurtures diversity and inclusion. We foster a workplace where diverse talents thrive, innovation flourishes, and responsible governance guides our decisions. Our approach drives positive impact not only within the company but also in the broader communities we serve, aligning business goals with sustainable development.`} />
+      </div>
+    </section>
   )
 }
 

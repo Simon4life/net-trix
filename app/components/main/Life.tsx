@@ -2,27 +2,25 @@ import React from 'react'
 import Link from "next/link"
 import LifeCards from './sub/LifeCards'
 import { FaBrush } from "react-icons/fa"
+import SectionHeader from '../SectionHeader'
+import Card from '../Card'
 const Life = () => {
   return (
     <section className="relative text-gray-900 dark:text-white">
 
-      {/* <div className="absolute inset-0 bg-black/80"></div> */}
-      <div className="z-10 text-white bg-[url('/digital.jpg')] bg-cover bg-center bg-no-repeat min-h-[30vh]">
+      <SectionHeader header="Explore Opportunities" text='Transform your brand with innovative digital solution that captivate and engage your audience' />
 
-        <h1 className="text-center pb-5 text-[40px]">Explore Opportunities</h1>
-        <p className="text-center text-[18px]">Transform your brand with innovative digital solution that captivate and engage your audience</p>
+      <div className="mx-auto grid grid-cols-[repeat(auto-fit,minmax(250px,1fr))]">
+        <Card header="Design" Icon={FaBrush} link='#' text={`At Squareup, our design team is passionate about creating stunning, user-centric designs that captivate your audience and elevate your brand. We believe that great design is not just about aesthetics; it's about creating seamless and intuitive user experiences.`} />
+
+        <Card header="Design" Icon={FaBrush} link='#' text={`At Squareup, our design team is passionate about creating stunning, user-centric designs that captivate your audience and elevate your brand. We believe that great design is not just about aesthetics; it's about creating seamless and intuitive user experiences.`} />
+
+        <Card header="Design" Icon={FaBrush} link='#' text={`At Squareup, our design team is passionate about creating stunning, user-centric designs that captivate your audience and elevate your brand. We believe that great design is not just about aesthetics; it's about creating seamless and intuitive user experiences.`} />
+
+        <Card header="Design" Icon={FaBrush} link='#' text={`At Squareup, our design team is passionate about creating stunning, user-centric designs that captivate your audience and elevate your brand. We believe that great design is not just about aesthetics; it's about creating seamless and intuitive user experiences.`} />
+
       </div>
 
-      <div className="border text-white bg-[#1A1A1A] p-6">
-        <div className="flex items-center my-4">
-          <FaBrush className='inline-block p-6 bg-[#1A1A1A] rounded' />
-          <h1 className='ml-4'>Design</h1>
-        </div>
-        <p className='text-sm mb-4'>
-          At Squareup, our design team is passionate about creating stunning, user-centric designs that captivate your audience and elevate your brand. We believe that great design is not just about aesthetics; it's about creating seamless and intuitive user experiences.
-        </p>
-        <Link className='block text-sm w-full p-4 text-center bg-[#262626]' href="#">Learn more</Link>
-      </div>
 
 
       {/* <div className=' py-20 px-40 '>

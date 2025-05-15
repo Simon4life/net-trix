@@ -5,10 +5,10 @@ import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 
 const poppins = Poppins({
-  weight: ['300', '400', '700'],
+  weight: ['200', '500', '700'],
   subsets: ['latin'],
   style: ['normal', 'italic']
- })
+})
 
 export const metadata: Metadata = {
   title: "Net-Trix Digital Agency",
@@ -25,9 +25,9 @@ export default function RootLayout({
       <body
         className={`${poppins.className} antialiased`}
       >
-        <Navbar/>
+        <Navbar />
         {children}
-        <Footer/>
+        <Footer />
       </body>
     </html>
   );

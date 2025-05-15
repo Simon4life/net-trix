@@ -5,17 +5,24 @@ import Link from 'next/link'
 import Logo from "@/public/logo.png"
 import React, { useState } from 'react'
 import { BiMenuAltRight, BiXCircle, BiCollapse } from "react-icons/bi";
+import { usePathname } from 'next/navigation'
+
+const navLinks = [
+  { name: 'Home', href: '/', },
+  { name: 'About', href: '/about' },
+  { name: 'Services', href: '/services' },
+  { name: 'Careers', href: '/careers' },
+]
+
 
 const Navbar = () => {
-  const [isActive, setIsActive] = useState(false);
-  const [isOpen, setIsOpen] = useState(false)
+  const [isOpen, setIsOpen] = useState(false);
+  const pathName = usePathname();
 
-  const handleClick = () => {
-    setIsActive(!isActive)
-  }
+
   return (
-    <nav className="bg-[#1A1A1A] text-white px-4 py-3">
-      <div className="flex justify-between items-center max-w-7xl mx-auto">
+    <nav className="bg-[#1A1A1A] border-[0.5px] border-[#262626] text-white px-4 py-3">
+      <div className="flex justify-between items-center  max-w-7xl mx-auto">
         <div className="text-lg font-bold">
           <Image src={Logo} alt='company logo' />
         </div>
@@ -30,10 +37,19 @@ const Navbar = () => {
 
         {/* Desktop Menu */}
         <ul className="hidden lg:flex space-x-6">
-          <li><Link href="#" className="hover:text-gray-400">Home</Link></li>
-          <li><Link href="#" className="hover:text-gray-400">About</Link></li>
-          <li><Link href="#" className="hover:text-gray-400">Contact</Link></li>
+          {
+            navLinks.map(link => {
+              const isActive = pathName === link.href
+              return (
+                <li key={link.name}><Link className={`px-4 py-2 rounded ${isActive ? 'bg-gray-700 text-white' : 'text-gray-300 hover:bg-gray-700'
+                  }`} href={link.href}>{link.name}</Link></li>
+              )
+            })
+          }
         </ul>
+        <div className='hidden lg:block'>
+          <Link href="/contact-us" className='bg-blue-600 px-4 py-2 rounded-md'>Contact</Link>
+        </div>
       </div>
 
       {/* Sidebar */}
