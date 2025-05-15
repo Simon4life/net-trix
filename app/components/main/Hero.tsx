@@ -9,11 +9,11 @@ import "slick-carousel/slick/slick-theme.css";
 
 
 const inria_sans = Inria_Sans({
-    weight: ['300', '400', '700'],
-    subsets: ['latin'],
-    style: ['normal', 'italic']
-   })
- 
+  weight: ['300', '400', '700'],
+  subsets: ['latin'],
+  style: ['normal', 'italic']
+})
+
 
 
 const Hero = () => {
@@ -27,25 +27,37 @@ const Hero = () => {
     autoplay: true,
   };
   return (
-    <div  className=''>
-        
-        <Slider {...settings} className='h-screen overflow-x-hidden'>
-          <div className='bg-[url("/digital.jpg")] h-screen bg-cover text-white'>
-            <div className="bg-[#00000080] h-full px-40 pt-40">
-              <h1 className="text-[60px] pb-10 flex items-end w-2/3 ">Achieve Your Business Goals with Tailored Digital Solutions That Work.</h1>
-              <Link href='/services' className={`${inria_sans.className} antialiased px-10 py-2 outline-none border-white border-2 hover:text-[#C9A50A] text-white text-[20px]`}>Check our Services</Link>
+    <section className="relative bg-[url('/digital.jpg')] bg-cover  bg-center bg-no-repeat min-h-screen  justify-center lg:items-center">
 
-            </div>
-          </div>
-          <div className='bg-[url("/slide2.jpg")] bg-top h-screen bg-cover text-white'>
-            <div className="bg-[#00000080] h-full px-40 pt-40">
-              <h1 className="text-[60px] pb-10 flex items-end w-2/3 ">Drive Your Business Forward with Custom Digital Solutions That Deliver Results.</h1>
-              <Link href='/services' className={`${inria_sans.className} antialiased px-10 py-2 outline-none border-white border-2 hover:text-[#C9A50A] text-white text-[20px]`}>Check our Services</Link>
+      {/* <!-- Overlay --> */}
+      <div className="absolute inset-0 bg-black/80"></div>
 
-            </div>
-          </div>
-        </Slider>
-    </div>
+      {/* <!-- Content --> */}
+      <div className="relative z-10 text-center text-white px-6 max-w-3xl">
+        {/* <h1 className="text-4xl sm:text-5xl font-bold mb-4 leading-snug">
+          Achieve Your Business Goals with Tailored Digital Solutions That Work.
+        </h1>
+        <p className="text-lg text-gray-200 mb-6">
+          Build beautiful and responsive UIs faster with Tailwind CSS in Next.js.
+        </p>
+        <Link href='/services' className={`${inria_sans.className} antialiased px-10 py-2 outline-none border-white border-2 hover:text-[#C9A50A] text-white text-[20px]`}>Check our Services</Link> */}
+
+        <h1 className="text-4xl sm:text-5xl font-bold pt-20 mb-4 leading-snug">
+          A Digital Production Studio that will work
+        </h1>
+        <div className='bg-[#262626] p-4 rounded place-items-center text-center mb-4'>
+          <p className="text-md text-[#98989A] mb-0">
+            For startup, Enterprise leaders, Media & Publishers and Social good.
+          </p>
+        </div>
+
+        <Link href='/services' className='px-5 py-3 bg-[#242424] rounded inline-block border-gray-700'>Our Works</Link>
+        <Link href='/services' className='px-5 py-3 bg-[#3B82F6] rounded inline-block ml-5'>Our Works</Link>
+        {/* <Link href='/services' className={`${inria_sans.className} antialiased px-10 py-2 outline-none border-white border-2 hover:text-[#C9A50A] text-white text-[20px]`}>Check our Services</Link> */}
+
+      </div>
+    </section>
+
   )
 }
 
