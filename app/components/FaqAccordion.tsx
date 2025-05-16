@@ -1,55 +1,24 @@
-'use client'
-import { useState } from 'react'
-import { FaChevronDown } from 'react-icons/fa'
+import FaqItem from './FaqItem';
 
-interface FAQItem {
-    question: string
-    answer: string
-}
+const faqData = [
+    { number: '01', question: 'What services does SquareUp provide?', answer: 'SquareUp offers a range of services including user experience design, web development, mobile apps, branding, and more.' },
+    { number: '02', question: 'How can SquareUp help my business?', answer: 'We help businesses by crafting tailored software solutions and user-centered design.' },
+    { number: '03', question: 'What industries does SquareUp work with?', answer: 'We work with startups, enterprises, and everything in between across various industries.' },
+    { number: '04', question: 'How long does it take to complete a project with SquareUp?', answer: 'Project timelines vary based on scope, but we aim for speed and efficiency.' },
+    { number: '05', question: 'Do you offer ongoing support and maintenance after the project is completed?', answer: 'Yes, we provide ongoing support and maintenance packages.' },
+    { number: '06', question: 'Can you work with existing design or development frameworks?', answer: 'Absolutely! We integrate seamlessly with your current tools and frameworks.' },
+    { number: '07', question: 'How involved will I be in the project development process?', answer: 'You’ll be a key collaborator through regular feedback cycles and check-ins.' },
+    { number: '08', question: 'Can you help with website or app maintenance and updates?', answer: 'Yes, we offer scalable maintenance plans for websites and applications.' }
+];
 
-const faqs: FAQItem[] = [
-    {
-        question: 'What services does your company offer?',
-        answer: 'We offer a range of digital and IT solutions including software development, cloud consulting, and infrastructure management.',
-    },
-    {
-        question: 'How can I contact support?',
-        answer: 'You can reach out via our Contact Us page or email us directly at support@example.com.',
-    },
-    {
-        question: 'Do you provide custom software solutions?',
-        answer: 'Yes, we specialize in tailoring digital solutions to meet unique business requirements.',
-    },
-]
-
-export default function FAQAccordion() {
-    const [openIndex, setOpenIndex] = useState<number | null>(null)
-
-    const toggle = (index: number) => {
-        setOpenIndex(openIndex === index ? null : index)
-    }
-
+export default function FaqSection() {
     return (
-        <div className="max-w-3xl mx-auto px-4 py-10">
-            {/* <h2 className="text-3xl font-bold mb-6 text-center">Frequently Asked Questions</h2> */}
-            <div className="space-y-4">
-                {faqs.map((faq, index) => (
-                    <div key={index} className="border border-gray-300 rounded-md">
-                        <button
-                            onClick={() => toggle(index)}
-                            className="flex justify-between items-center w-full p-4 text-left font-medium text-gray-800 focus:outline-none"
-                        >
-                            {faq.question}
-                            <FaChevronDown
-                                className={`transition-transform duration-300 ${openIndex === index ? 'rotate-180' : ''}`}
-                            />
-                        </button>
-                        {openIndex === index && (
-                            <div className="p-4 pt-0 text-gray-600">{faq.answer}</div>
-                        )}
-                    </div>
+        <div className="bg-[#1A1A1A] border border-[#262626] text-white px-6 py-12">
+            <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-4">
+                {faqData.map((faq, idx) => (
+                    <FaqItem key={idx} number={faq.number} question={faq.question} answer={faq.answer} />
                 ))}
             </div>
         </div>
-    )
+    );
 }

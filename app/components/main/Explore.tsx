@@ -1,14 +1,15 @@
+'use client';
 import React from 'react'
 import Card from '../Card';
 import { FaBrush } from 'react-icons/fa';
 import SectionHeader from '../SectionHeader';
-import futuristicLines from "@/public/futuristic-lines.jpg"
+
 const Explore = () => {
   return (
     <section>
       {/* section header */}
 
-      <SectionHeader header='Explore Life at Net-trix Solution' text='Transform your brand with innovative digital solution that captivate and engage your audience' background="/futuristic-lines.jpg" />
+      <SectionHeader header='Explore Life at Net-trix Solution' text='Transform your brand with innovative digital solution that captivate and engage your audience' />
       <div className="mx-auto grid grid-cols-[repeat(auto-fit,minmax(250px,1fr))]">
 
         <Card header="Global Digital Services" Icon={FaBrush} text={` Infosys is a global leader in next-generation digital services and consulting. With a workforce of over 300,000 people worldwide, we strive to amplify human potential and create the next opportunity for individuals, businesses, and communities alike. Our reach spans more than 56 countries, enabling clients across the globe to successfully navigate their digital transformation journeys with confidence and innovation.`} />

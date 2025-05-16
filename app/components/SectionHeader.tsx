@@ -1,17 +1,23 @@
+"use client"
 import React from 'react'
+import { motion } from "framer-motion"
 interface SectionHeader {
     text: string
     header: string
-    background?: string
 }
-const SectionHeader = ({ text, header, background }: SectionHeader) => {
+
+const SectionHeader = ({ text, header, }: SectionHeader) => {
+
     return (
-        <div className={`relative text-white bg-[url(${background})}] bg-cover bg-center bg-no-repeat min-h-[40vh]`}>
+        <div className={`relative bg-[url('/futuristic-lines.jpg')] text-white bg-cover bg-center bg-no-repeat min-h-[50vh]`}>
             <div className="absolute z-10 inset-0 bg-black/80"></div>
-            <div className="absolute inset-0 z-20 flex-col items-center justify-center">
-                <h1 className="text-center z-20 text-white mt-14 text-[40px]">{header}</h1>
+            <motion.div initial={{ opacity: 0, y: 40 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6, ease: 'easeOut' }}
+                viewport={{ once: true, amount: 0.2 }} className="absolute inset-0 z-20 flex flex-col items-center justify-center">
+                <h1 className="text-center z-20 text-white mb-4 text-4xl">{header}</h1>
                 <p className="text-center">{text}</p>
-            </div>
+            </motion.div>
         </div>
     )
 }

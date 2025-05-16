@@ -19,54 +19,64 @@ export default function ContactPage() {
     }
 
     return (
-        <main className="min-h-screen bg-gray-100 py-12 px-4 sm:px-8">
-            <div className="max-w-3xl mx-auto bg-white p-8 rounded-xl shadow-lg">
-                <h1 className="text-3xl font-bold mb-6 text-gray-800">Contact Us</h1>
-                <form onSubmit={handleSubmit} className="space-y-6">
-                    <div>
-                        <label className="block text-gray-700 font-medium mb-2">Name</label>
-                        <input
-                            name="name"
-                            type="text"
-                            value={form.name}
-                            onChange={handleChange}
-                            required
-                            className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-blue-300"
-                        />
-                    </div>
+        <main className="min-h-screen text-white bg-[#1A1A1A] px-4 sm:px-8">
+            <div className='border-[0.5px] border-[#262626]'>
 
-                    <div>
-                        <label className="block text-gray-700 font-medium mb-2">Email</label>
-                        <input
-                            name="email"
-                            type="email"
-                            value={form.email}
-                            onChange={handleChange}
-                            required
-                            className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-blue-300"
-                        />
-                    </div>
+                {/* section header */}
+                <SectionHeader header='Contact Us' text='Get in touch with us today and let us help you with any questions or inquiries you may have' />
 
-                    <div>
-                        <label className="block text-gray-700 font-medium mb-2">Message</label>
-                        <textarea
-                            name="message"
-                            rows={5}
-                            value={form.message}
-                            onChange={handleChange}
-                            required
-                            className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-blue-300"
-                        ></textarea>
-                    </div>
+                {/* contact form */}
+                <div className="max-w-3xl mx-auto border-[0.5px] border-[#262626] p-8">
+                    <h1 className="text-3xl font-bold my-8 text-white">Contact Us</h1>
+                    <form onSubmit={handleSubmit} className=" space-y-6">
+                        <div className='p-6 border border-[#333333] rounded-md  bg-[#262626] '>
+                            <label className="block text-white font-medium mb-2">Full Name</label>
+                            <input
+                                name="name"
+                                type="text"
+                                value={form.name}
+                                onChange={handleChange}
+                                required
+                                placeholder='Type Here'
+                                className="w-full tracking-wide px-0 py-2 bg-[#262626] border-b border-[#333333] focus:outline-none"
+                            />
+                        </div>
 
-                    <button
-                        type="submit"
-                        className="bg-blue-600 text-white px-6 py-2 rounded-md hover:bg-blue-700 transition"
-                    >
-                        Send Message
-                    </button>
-                </form>
+                        {/* Email input  */}
+                        <div className='p-6 border border-[#333333] rounded-md  bg-[#262626] '>
+                            <label className="block text-white font-medium mb-2">Email</label>
+                            <input
+                                name="email"
+                                type="email"
+                                value={form.email}
+                                onChange={handleChange}
+                                required
+                                placeholder='Type Here'
+                                className="w-full tracking-wide px-0 py-2 bg-[#262626] border-b border-[#333333] focus:outline-none"
+                            />
+                        </div>
+
+                        {/* Message input */}
+                        <div className='p-6 border border-[#333333] rounded-md  bg-[#262626] '>
+                            <label className="block text-white font-medium mb-2">Your Message</label>
+                            <textarea
+                                placeholder="Type your message here..."
+                                className="w-full tracking-wide px-0 py-2 bg-[#262626] border-b border-[#333333]"
+                            />
+                        </div>
+
+
+
+                        <button
+                            type="submit"
+                            className="bg-blue-600 text-white px-6 py-2 rounded-md hover:bg-blue-700 transition"
+                        >
+                            Send Message
+                        </button>
+                    </form>
+                </div>
             </div>
+
             <SectionHeader header='Frequently Asked Questions' text="Still you have any questions? Contact our Team via hello@squareup.com" />
             <FAQAccordion />
         </main>
