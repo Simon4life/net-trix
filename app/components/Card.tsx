@@ -17,13 +17,13 @@ const Card = ({ header, link, text, Icon }: CardProps) => {
                 transition={{ duration: 0.6, ease: 'easeOut' }}
                 viewport={{ once: true, amount: 0.2 }} >
                 <div className="flex items-center my-4">
-                    <span className='inline-block p-6  bg-[#262626] rounded-md'>
+                    <span className='inline-block p-6 text-2xl text-blue-400  bg-[#262626] rounded-md'>
                         <Icon />
                     </span>
 
                     <h2 className='ml-4 text-xl font-bold'>{header}</h2>
                 </div>
-                <p className='text-sm leading-relaxed my-6'>
+                <p className='text-sm tracking-wider text-[#E6E6E6] leading-relaxed my-6'>
                     {text}
                 </p>
                 {link ? <Link className='block text-sm w-full p-4 text-center bg-[#262626] rounded' href="#">Learn more</Link> : null}

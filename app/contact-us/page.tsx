@@ -4,6 +4,7 @@
 import { useState } from 'react'
 import SectionHeader from '../components/SectionHeader'
 import FAQAccordion from '../components/FaqAccordion'
+import { FaPhone, FaMailBulk, FaLocationArrow } from 'react-icons/fa'
 
 export default function ContactPage() {
     const [form, setForm] = useState({ name: '', email: '', message: '' })
@@ -26,7 +27,28 @@ export default function ContactPage() {
                 <SectionHeader header='Contact Us' text='Get in touch with us today and let us help you with any questions or inquiries you may have' />
 
                 {/* contact form */}
+                <div className="flex flex-col md:flex-row flex-wrap gap-4 justify-center items-center border border-[#262626] bg-[#1A1A1A] py-6">
+                    {/* Email */}
+                    <div className="flex items-center gap-2 bg-[#262626] text-white px-4 py-2 rounded-md">
+                        <FaMailBulk className="text-blue-400 w-5 h-5" />
+                        <span className="text-sm sm:text-base font-medium">hello@squareup.com</span>
+                    </div>
+
+                    {/* Phone */}
+                    <div className="flex items-center gap-2 bg-[#262626] text-white px-4 py-2 rounded-md">
+                        <FaPhone className="text-blue-400 w-5 h-5" />
+                        <span className="text-sm sm:text-base font-medium">+91 91813 23 2309</span>
+                    </div>
+
+                    {/* Location */}
+                    <div className="flex items-center gap-2 bg-[#262626] text-white px-4 py-2 rounded-md">
+                        <FaLocationArrow className="text-blue-400 w-5 h-5" />
+                        <span className="text-sm sm:text-base font-medium">Get Location</span>
+                    </div>
+                </div>
+
                 <div className="max-w-3xl mx-auto border-[0.5px] border-[#262626] p-8">
+
                     <h1 className="text-3xl font-bold my-8 text-white">Contact Us</h1>
                     <form onSubmit={handleSubmit} className=" space-y-6">
                         <div className='p-6 border border-[#333333] rounded-md  bg-[#262626] '>

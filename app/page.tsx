@@ -1,7 +1,6 @@
-import Explore from "./components/main/Explore";
-import Life from "./components/main/Life";
-import Hero from "./components/main/Hero";
-import Values from "./components/main/Values";
+import Explore from "./components/Explore";
+import Services from "./components/Services";
+import Hero from "./components/Hero";
 import Socials from "./components/Socials";
 import Stats from "./components/Stats";
 
@@ -10,9 +9,8 @@ export default function Home() {
     <main>
       <Hero />
       <Stats />
-      <Life />
+      <Services />
       <Explore />
-      {/* <Values/> */}
       <Socials heading="Don't Think Twice. Let us Protect Your Data." />
     </main>
   );
