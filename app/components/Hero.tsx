@@ -27,7 +27,7 @@ const Hero = () => {
         </p>
         <Link href='/services' className={`${inria_sans.className} antialiased px-10 py-2 outline-none border-white border-2 hover:text-[#C9A50A] text-white text-[20px]`}>Check our Services</Link> */}
 
-        <h1 className="text-4xl sm:text-5xl font-bold mb-4 leading-snug animate-slideUp">
+        <h1 className="text-4xl sm:text-5xl font-bold m-0 mb-4 leading-snug animate-slideUp">
           A Digital Production Studio that will work
         </h1>
         <div className='bg-[#262626] p-4 rounded place-items-center text-center mb-4'>

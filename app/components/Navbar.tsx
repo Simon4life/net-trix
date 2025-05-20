@@ -70,6 +70,9 @@ const Navbar = () => {
           {
             navLinks.map((link, index) => (<Link onClick={() => setIsOpen(false)} key={index} href={link.href}>{link.name}</Link>))
           }
+          <div className='my-6 w-full'>
+            <Link href="/contact-us" className='bg-blue-600 text-center block px-4 py-2 rounded-md'>Contact</Link>
+          </div>
         </nav>
       </aside>
     </nav>

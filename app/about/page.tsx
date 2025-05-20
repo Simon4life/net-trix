@@ -10,25 +10,25 @@ const items = [
         number: "01",
         title: "Design",
         description:
-            "Once upon a time, in a world driven by technology, a group of talented designers came together with a shared vision. They believed that design could shape the way people interacted with digital products. With their passion for aesthetics and usability, they founded SquareUp Digital Product Agency’s design department. Their mission was to create visually stunning and user-friendly interfaces that would leave a lasting impression.",
+            "Once upon a time, in a world rapidly evolving through innovation and connectivity, a group of visionary technologists came together with a shared purpose. They believed that technology should not only be powerful, but also intuitive and accessible. Driven by this belief, they founded Net- Trix, a company built on the idea that smart, seamless solutions could transform the way businesses operate in the digital age.With a passion for problem - solving and a relentless curiosity, the team at Net - Trix set out to craft cutting - edge systems that were both scalable and human - centered.",
     },
     {
         number: "02",
         title: "Engineering",
         description:
-            "Meanwhile, a team of brilliant engineers was busy crafting the backbone of digital innovation. Within their expertise in coding and development, they founded the engineering division of SquareUp. They believed that technology had the power to transform ideas into reality. Their mission was to build robust, scalable, and cutting-edge digital solutions that would push the boundaries of what was possible.",
+            "Meanwhile, a team of brilliant engineers was busy shaping the future of digital technology. With their deep expertise in development, they laid the foundation for Net-Trix’s engineering division. They believed that innovation could turn bold ideas into reality. Their mission was to build powerful, scalable solutions that redefined what technology could achieve.",
     },
     {
         number: "03",
         title: "Project Management",
         description:
-            "In the midst of the creative and technical minds, a group of project managers emerged as the glue that held everything together. They understood the importance of effective communication, organization, and efficient execution. With their skills in planning and coordination, they founded SquareUp’s project management team. Their mission was to ensure that every project ran smoothly, on time, and within budget.",
+            "In the midst of the creative and technical minds, a group of project managers emerged as the force that brought everything into harmony. They valued clear communication, structured planning, and flawless execution. With their expertise in coordination, they built Net-Trix’s project management team. Their mission was to keep every project aligned, on schedule, and delivered with precision.",
     },
     {
         number: "04",
         title: "Collaboration",
         description:
-            "At SquareUp, these three departments came together to form a cohesive and collaborative unit. They embraced the power of collaboration and recognized that their combined expertise would result in truly exceptional digital products. They believed that by working closely with their clients, understanding their needs, and involving them in the creative process, they could deliver solutions that surpassed expectations.",
+            "At Net-Trix, these three departments united to form a seamless and collaborative force. They believed in the strength of teamwork and knew that their combined talents could create outstanding digital solutions. By partnering closely with clients, understanding their goals, and including them in every step, they aimed to deliver results that went beyond expectations.",
     },
 ];
 
@@ -39,7 +39,7 @@ const AboutPage = () => {
             <div className='px-6 py-8'>
                 <div className="py-4 px-2 max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-8">
                     <article className='text-white w-full md:w-1/2'>
-                        <h1 className='mb-4 text-2xl'>About SquareUp</h1>
+                        <h1 className='mb-4 text-2xl'>About Net-Trix</h1>
                         <p className='leading-loose text-justify text-sm mb-6'>At the heart of our mission is ensuring that your organization thrives. We focus on aligning the right processes, technology, and people, allowing you to reach your business goals effortlessly. We take pride in easing your workload by providing solutions that empower you to focus on growth. Our commitment revolves around clear communication and a client-centric approach to streamline infrastructure deployment.</p>
                     </article>
                     <Image src={globeTech} className='w-full md:w-1/2' alt='globe image' />

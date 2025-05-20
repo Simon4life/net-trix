@@ -1,14 +1,11 @@
 import FaqItem from './FaqItem';
 
 const faqData = [
-    { number: '01', question: 'What services does SquareUp provide?', answer: 'SquareUp offers a range of services including user experience design, web development, mobile apps, branding, and more.' },
-    { number: '02', question: 'How can SquareUp help my business?', answer: 'We help businesses by crafting tailored software solutions and user-centered design.' },
-    { number: '03', question: 'What industries does SquareUp work with?', answer: 'We work with startups, enterprises, and everything in between across various industries.' },
-    { number: '04', question: 'How long does it take to complete a project with SquareUp?', answer: 'Project timelines vary based on scope, but we aim for speed and efficiency.' },
-    { number: '05', question: 'Do you offer ongoing support and maintenance after the project is completed?', answer: 'Yes, we provide ongoing support and maintenance packages.' },
-    { number: '06', question: 'Can you work with existing design or development frameworks?', answer: 'Absolutely! We integrate seamlessly with your current tools and frameworks.' },
-    { number: '07', question: 'How involved will I be in the project development process?', answer: 'You’ll be a key collaborator through regular feedback cycles and check-ins.' },
-    { number: '08', question: 'Can you help with website or app maintenance and updates?', answer: 'Yes, we offer scalable maintenance plans for websites and applications.' }
+    { number: '01', question: 'Will my data be lost during migration to the Netverse?', answer: 'At Netrix, we ensure the seamless migration of platforms. No data is lost during migration as we first ensure all essentials are backed up to the cloud' },
+    { number: '02', question: "What is Net-Trix Solutions' approach to cybersecurity?", answer: "Net-Trix Solutions takes a client-centric approach to cybersecurity by leveraging partnerships with leading global experts, including Fortinet. We deliver advanced solutions such as SOC services, proactive penetration testing, and firewall setups, ensuring businesses have the protection they need to secure their digital assets." },
+    { number: '03', question: 'What is the Net-Verse platform by Net-Trix Solutions?', answer: "The Net-Verse is a comprehensive ecosystem developed by Net-Trix Solutions to facilitate seamless project monitoring and management. Key features include: Real-time Site Monitoring: Utilizing GPS-enabled photo and video uploads. Progress Tracking: Stage-by-stage updates with delivery timelines. Comprehensive Reporting: Collection and management of reports throughout a project’s lifecycle." },
+    { number: '04', question: 'Is Net-Trix Solutions licensed for data protection compliance services?', answer: 'Yes, Net-Trix Solutions is licensed by the Nigerian Data Protection Bureau to provide compliance audits, privacy assessments, and other data protection services, ensuring organizations meet regulatory standards like GDPR and CCPA.' },
+    { number: '05', question: 'How does Net-Trix Solutions help clients focus on growth?', answer: 'Net-Trix Solutions takes the operational burden off its clients by delivering tailored IT and cybersecurity solutions. This allows businesses to concentrate on scaling and innovation while trusting us to handle their security, compliance, and infrastructure needs effectively.' },
 ];
 
 export default function FaqSection() {

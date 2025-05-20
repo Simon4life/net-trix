@@ -31,19 +31,19 @@ export default function ContactPage() {
                     {/* Email */}
                     <div className="flex items-center gap-2 bg-[#262626] text-white px-4 py-2 rounded-md">
                         <FaMailBulk className="text-blue-400 w-5 h-5" />
-                        <span className="text-sm sm:text-base font-medium">hello@squareup.com</span>
+                        <span className="text-sm sm:text-base font-medium">info@net-trixsolutions.com</span>
                     </div>
 
                     {/* Phone */}
                     <div className="flex items-center gap-2 bg-[#262626] text-white px-4 py-2 rounded-md">
                         <FaPhone className="text-blue-400 w-5 h-5" />
-                        <span className="text-sm sm:text-base font-medium">+91 91813 23 2309</span>
+                        <span className="text-sm sm:text-base font-medium">+234 816 476 9238</span>
                     </div>
 
                     {/* Location */}
                     <div className="flex items-center gap-2 bg-[#262626] text-white px-4 py-2 rounded-md">
                         <FaLocationArrow className="text-blue-400 w-5 h-5" />
-                        <span className="text-sm sm:text-base font-medium">Get Location</span>
+                        <span className="text-sm sm:text-base font-medium">Plot 308, Suite, 201 Ahmadu Bello Wy, Kado, Abuja 900108, Federal Capital Territory</span>
                     </div>
                 </div>
 
