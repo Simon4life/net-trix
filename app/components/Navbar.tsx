@@ -67,10 +67,9 @@ const Navbar = () => {
 
         {/* Navigation Links */}
         <nav className="flex flex-col space-y-2 px-4 py-4">
-          <Link href="#" className="hover:bg-gray-800 px-2 py-2 rounded">Home</Link>
-          <Link href="#" className="hover:bg-gray-800 px-2 py-2 rounded">About</Link>
-          <Link href="#" className="hover:bg-gray-800 px-2 py-2 rounded">Services</Link>
-          <Link href="#" className="hover:bg-gray-800 px-2 py-2 rounded">Contact</Link>
+          {
+            navLinks.map((link, index) => (<Link key={index} href={link.href}>{link.name}</Link>))
+          }
         </nav>
       </aside>
     </nav>
