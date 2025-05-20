@@ -68,7 +68,7 @@ const Navbar = () => {
         {/* Navigation Links */}
         <nav className="flex flex-col space-y-2 px-4 py-4">
           {
-            navLinks.map((link, index) => (<Link key={index} href={link.href}>{link.name}</Link>))
+            navLinks.map((link, index) => (<Link onClick={() => setIsOpen(false)} key={index} href={link.href}>{link.name}</Link>))
           }
         </nav>
       </aside>
