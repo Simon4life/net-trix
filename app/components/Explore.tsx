@@ -1,7 +1,7 @@
 'use client';
 import React from 'react'
 import Card from './Card';
-import { FaBrain, FaBrush, FaGlobe, FaLeaf, FaMagic, FaRedo, FaRocket } from 'react-icons/fa';
+import { FaBrain, FaGlobe, FaLeaf, FaMagic } from 'react-icons/fa';
 import SectionHeader from './SectionHeader';
 
 const Explore = () => {

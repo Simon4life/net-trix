@@ -4,7 +4,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import Logo from "@/public/logo.png"
 import React, { useState } from 'react'
-import { BiMenuAltRight, BiXCircle, BiCollapse } from "react-icons/bi";
+import { BiMenuAltRight, BiCollapse } from "react-icons/bi";
 import { usePathname } from 'next/navigation'
 
 const navLinks = [

@@ -1,33 +1,16 @@
 'use client'
 
 import React from 'react'
-import { Inria_Sans } from 'next/font/google'
 import Link from 'next/link'
-import Slider from "react-slick";
 import { motion } from 'framer-motion';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
 const MotionLink = motion(Link)
 
-const inria_sans = Inria_Sans({
-  weight: ['300', '400', '700'],
-  subsets: ['latin'],
-  style: ['normal', 'italic']
-})
-
 
 
 const Hero = () => {
-  const settings = {
-    dots: true,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    autoplaySpeed: 3000,
-    autoplay: true,
-  };
   return (
     <section className="relative h-[calc(100vh-80px)] bg-[url('/digital.jpg')] bg-cover  bg-center bg-no-repeat w-full flex items-center justify-center">
 

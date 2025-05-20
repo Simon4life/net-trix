@@ -1,6 +1,6 @@
 'use client';
 import React from 'react'
-import { FaBrush, FaCloud, FaLock, FaTeamspeak, FaUsers } from "react-icons/fa"
+import { FaCloud, FaLock, FaUsers } from "react-icons/fa"
 import SectionHeader from './SectionHeader'
 import Card from './Card'
 import { FaShieldVirus } from 'react-icons/fa';

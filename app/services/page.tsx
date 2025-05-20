@@ -1,7 +1,6 @@
 "use client"
 import { FaEnvelope } from "react-icons/fa";
 import SectionHeader from "../components/SectionHeader";
-import { BiEnvelope } from "react-icons/bi";
 
 const Services = () => {
     return (<>
