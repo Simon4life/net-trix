@@ -24,7 +24,10 @@ const Navbar = () => {
     <nav className="bg-[#1A1A1A] border-[0.5px] border-[#262626] text-white px-4 py-3">
       <div className="flex justify-between items-center  max-w-7xl mx-auto">
         <div className="text-lg font-bold">
-          <Image src={Logo} alt='company logo' />
+          <Link href="/">
+            <Image src={Logo} alt='company logo' />
+          </Link>
+
         </div>
 
         <button
@@ -59,7 +62,9 @@ const Navbar = () => {
       >
         {/* close button for mobile */}
         <div className="flex items-center justify-between px-4 py-3 lg:hidden">
-          <span className="text-lg font-bold">Menu</span>
+          <Link href="/">
+            <Image src={Logo} alt='company logo' />
+          </Link>
           <button onClick={() => setIsOpen(false)}>
             <BiCollapse />
           </button>
@@ -68,10 +73,10 @@ const Navbar = () => {
         {/* Navigation Links */}
         <nav className="flex flex-col space-y-2 px-4 py-4">
           {
-            navLinks.map((link, index) => (<Link onClick={() => setIsOpen(false)} key={index} href={link.href}>{link.name}</Link>))
+            navLinks.map((link, index) => (<Link className='p-2 rounded-md transition-all hover:bg-gray-700' onClick={() => setIsOpen(false)} key={index} href={link.href}>{link.name}</Link>))
           }
-          <div className='my-6 w-full'>
-            <Link href="/contact-us" className='bg-blue-600 text-center block px-4 py-2 rounded-md'>Contact</Link>
+          <div className='my-8 w-full'>
+            <Link href="/contact-us" className='bg-blue-600 transition-all hover:bg-blue-800 text-center block px-4 py-2 rounded-md'>Contact</Link>
           </div>
         </nav>
       </aside>

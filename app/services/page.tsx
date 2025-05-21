@@ -1,6 +1,7 @@
 "use client"
-import { FaEnvelope } from "react-icons/fa";
+import { FaSearch, FaBriefcase, FaWrench } from "react-icons/fa";
 import SectionHeader from "../components/SectionHeader";
+import { FaShield } from "react-icons/fa6";
 
 const Services = () => {
     return (<>
@@ -20,105 +21,84 @@ const Services = () => {
                     </button>
                 </div>
 
-                <div className=" border-[#262626]">
+                <div className="border-[#262626]">
 
                     {/* Section Label */}
-                    <h3 className="text-lg  border border-[#262626] font-semibold text-center md:text-justify text-gray-300 p-8">Web Development</h3>
+                    <h3 className="text-lg  border border-[#262626] font-semibold text-center md:text-justify text-gray-300 p-8">Cyber Security</h3>
 
                     {/* Service Cards Grid */}
                     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4">
                         {/* Card 1 */}
                         <div className="p-6 border border-[#262626]">
                             <div className="text-blue-400 text-3xl mb-4">
-                                <FaEnvelope />
+                                <FaShield />
                             </div>
-                            <h6 className="font-semibold text-white mb-2">Front-End Development</h6>
+                            <h6 className="font-semibold text-white mb-2">Security Audits & Assessments</h6>
                             <p className="text-gray-400 text-sm">
-                                (HTML, CSS, JavaScript)
+                                Vulnerability assessment
+                            </p>
+                            <p className="text-gray-400 text-sm">
+                                Security posture evaluation
+                            </p>
+                            <p className="text-gray-400 text-sm">
+                                Penetration testing
                             </p>
                         </div>
 
                         {/* Card 2 */}
                         <div className="p-6 border border-[#262626]">
-                            <div className="text-lime-400 text-3xl mb-4">🖥️</div>
-                            <h4 className="font-semibold text-white mb-2">Back-End Development</h4>
+                            <div className="text-blue-400 text-3xl mb-4">
+                                <FaSearch />
+                            </div>
+                            <h6 className="font-semibold text-white mb-2">Threat Detection & Monitoring</h6>
                             <p className="text-gray-400 text-sm">
-                                (PHP, Python, Ruby)
+                                Real-time security monitoring (SIEM integration)
+                            </p>
+                            <p className="text-gray-400 text-sm">
+                                Anomaly and behavior-based detection
+                            </p>
+                            <p className="text-gray-400 text-sm">
+                                Intrusion detection systems (IDS/IPS)
                             </p>
                         </div>
 
                         {/* Card 3 */}
                         <div className="p-6 border border-[#262626]">
-                            <div className="text-lime-400 text-3xl mb-4">⚙️</div>
-                            <h4 className="font-semibold text-white mb-2">
-                                Content Management System
-                            </h4>
+                            <div className="text-blue-400 text-3xl mb-4">
+                                <FaWrench />
+                            </div>
+                            <h6 className="font-semibold text-white mb-2">Security Architecture & Implementation</h6>
                             <p className="text-gray-400 text-sm">
-                                (WordPress, Drupal)
+                                Network and cloud security design
+                            </p>
+                            <p className="text-gray-400 text-sm">
+                                Secure software development lifecycle (SSDLC)
+                            </p>
+                            <p className="text-gray-400 text-sm">
+                                Endpoint protection configuration
                             </p>
                         </div>
 
                         {/* Card 4 */}
                         <div className="p-6 border border-[#262626]">
-                            <div className="text-lime-400 text-3xl mb-4">🛒</div>
-                            <h4 className="font-semibold text-white mb-2">
-                                E-Commerce Platform Development
-                            </h4>
+                            <div className="text-blue-400 text-3xl mb-4">
+                                <FaBriefcase />
+                            </div>
+                            <h6 className="font-semibold text-white mb-2">Security Consulting & Compliance</h6>
                             <p className="text-gray-400 text-sm">
-                                (Magento, Shopify)
+                                Policy and procedure development
+                            </p>
+                            <p className="text-gray-400 text-sm">
+                                Security awareness training for staff
+
+
+                            </p>
+                            <p className="text-gray-400 text-sm">
+                                Cyber insurance advisory
                             </p>
                         </div>
                     </div>
                 </div>
-                <div className=" border-[#262626]">
-
-                    {/* Section Label */}
-                    <h3 className="text-lg  border border-[#262626] font-semibold text-center md:text-justify text-gray-300 p-8">Web Development</h3>
-
-                    {/* Service Cards Grid */}
-                    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4">
-                        {/* Card 1 */}
-                        <div className="p-6 border border-[#262626]">
-                            <div className="text-lime-400 text-3xl mb-4">💻</div>
-                            <h4 className="font-semibold text-white mb-2">Front-End Development</h4>
-                            <p className="text-gray-400 text-sm">
-                                (HTML, CSS, JavaScript)
-                            </p>
-                        </div>
-
-                        {/* Card 2 */}
-                        <div className="p-6 border border-[#262626]">
-                            <div className="text-lime-400 text-3xl mb-4">🖥️</div>
-                            <h4 className="font-semibold text-white mb-2">Back-End Development</h4>
-                            <p className="text-gray-400 text-sm">
-                                (PHP, Python, Ruby)
-                            </p>
-                        </div>
-
-                        {/* Card 3 */}
-                        <div className="p-6 border border-[#262626]">
-                            <div className="text-lime-400 text-3xl mb-4">⚙️</div>
-                            <h4 className="font-semibold text-white mb-2">
-                                Content Management System
-                            </h4>
-                            <p className="text-gray-400 text-sm">
-                                (WordPress, Drupal)
-                            </p>
-                        </div>
-
-                        {/* Card 4 */}
-                        <div className="p-6 border border-[#262626]">
-                            <div className="text-lime-400 text-3xl mb-4">🛒</div>
-                            <h4 className="font-semibold text-white mb-2">
-                                E-Commerce Platform Development
-                            </h4>
-                            <p className="text-gray-400 text-sm">
-                                (Magento, Shopify)
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
             </div>
         </section>
     </>

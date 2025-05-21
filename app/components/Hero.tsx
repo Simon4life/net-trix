@@ -1,5 +1,4 @@
 'use client'
-
 import React from 'react'
 import Link from 'next/link'
 import { motion } from 'framer-motion';
@@ -7,8 +6,6 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
 const MotionLink = motion(Link)
-
-
 
 const Hero = () => {
   return (
@@ -46,18 +43,14 @@ const Hero = () => {
           Get Started
         </MotionLink>
 
-        <MotionLink href="/contact"
+        <MotionLink href="/about"
           initial={{ opacity: 0, y: 40 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.8, duration: 0.5, ease: 'easeOut' }}
+          transition={{ delay: 0.6, duration: 0.5, ease: 'easeOut' }}
           className="bg-gray-200 hover:bg-gray-300 text-gray-800 px-6 py-3 rounded-xl inline-block ml-4 shadow-md"
         >
           Learn More
         </MotionLink>
-        {/* Our Works</Link>
-        <Link href='/services' className='px-5 py-3 bg-[#3B82F6] rounded inline-block ml-5'>Our Works</Link> */}
-        {/* <Link href='/services' className={`${inria_sans.className} antialiased px-10 py-2 outline-none border-white border-2 hover:text-[#C9A50A] text-white text-[20px]`}>Check our Services</Link> */}
-
       </div>
     </section>
 

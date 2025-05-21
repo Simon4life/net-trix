@@ -1,4 +1,5 @@
 import React from 'react'
+import Link from 'next/link'
 
 const Footer = () => {
     return (
@@ -16,7 +17,7 @@ const Footer = () => {
                 {/* Contact Info */}
                 <div>
                     <h3 className="text-lg font-semibold mb-2">Contact</h3>
-                    <p className="text-sm">Suit 201, Kings Plaza Kado Estate</p>
+                    <p className="text-sm mb-2">Plot 308, Suite, 201 Ahmadu Bello Wy, Kado, Abuja 900108, Federal Capital Territory</p>
                     <p className="text-sm">info@net-trixsolutions.com</p>
                 </div>
 
@@ -53,14 +54,14 @@ const Footer = () => {
             {/* Footer Bottom */}
             <div className="border-t border-gray-700 mt-10 pt-6 text-sm text-center">
                 <ul className="flex flex-wrap justify-center gap-4 mb-2">
-                    <li><a href="#" className="hover:underline">About Us</a></li>
-                    <li><a href="#" className="hover:underline">Home</a></li>
-                    <li><a href="#" className="hover:underline">Industries</a></li>
-                    <li><a href="#" className="hover:underline">Services</a></li>
-                    <li><a href="#" className="hover:underline">Support</a></li>
-                    <li><a href="#" className="hover:underline">Help & Support</a></li>
-                    <li><a href="#" className="hover:underline">Innovations</a></li>
-                    <li><a href="#" className="hover:underline">Net-Verse</a></li>
+                    <li><Link href="/about" className="hover:underline">About Us</Link></li>
+                    <li><Link href="/" className="hover:underline">Home</Link></li>
+                    <li><Link href="#" className="hover:underline">Industries</Link></li>
+                    <li><Link href="/services" className="hover:underline">Services</Link></li>
+                    <li><Link href="#" className="hover:underline">Support</Link></li>
+                    <li><Link href="#" className="hover:underline">Help & Support</Link></li>
+                    <li><Link href="#" className="hover:underline">Innovations</Link></li>
+                    <li><Link href="#" className="hover:underline">Net-Verse</Link></li>
                 </ul>
                 <p className="text-gray-400">&copy; {new Date().getFullYear()} Net Trix Solutions Ltd. All rights reserved.</p>
             </div>
